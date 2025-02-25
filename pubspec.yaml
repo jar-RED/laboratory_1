@@ -1,0 +1,50 @@
+name: snap_stash
+description: "A new Flutter project."
+publish_to: "none"
+
+environment:
+  sdk: ^3.6.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^1.0.7
+  shared_preferences: ^2.5.2
+  path_provider: ^2.1.2
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.8
+  forui: ^0.9.0
+  forui_assets: ^0.9.0
+  reorderable_grid_view: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Poppins-Italic.ttf
+          style: italic
+
+  assets:
+    - assets/images/no-photo.png
+    - assets/images/logo.png
+    - assets/images/taking-photo.png
+    - assets/images/captioning.png
+    - assets/images/viewing-photo.png
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_logo.png"
+  adaptive_icon_background: "#000000"
